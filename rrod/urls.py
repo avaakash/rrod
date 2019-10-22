@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from shloka.views import home, rapper_registration,audience_registration,success
+from shloka.views import home, rapper_registration,audience_registration,success,round_details
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,4 +23,5 @@ urlpatterns = [
     path('rapper-register',rapper_registration,name='rapper'),
     path('audience-register',audience_registration,name='audience'),
     path('success',success,name='success'),
+    path('round-details',round_details,name='rounds'),
 ]

@@ -1,9 +1,24 @@
 {% extends 'include/base.html' %}
+{% load widget_tweaks %}
 {% load static %}
-{% block title %}Succes{% endblock %}
+{% block title %}Thanks for Registering{% endblock %}
 
 {% block body %}
-    <h3 style="text-align: center;">Successfully Registered</h3>
-    <h5 style="text-align: center;">The council of the rap rulers shall review ur Registeration</h3>
-    <button type="button" href="{% url 'home' %}" style="text-align: center;"> Home</button>
+
+
+
+<div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+        <h1 class="text-center formhead" style="border-bottom: 1px solid gold;">Rap Ruler<span style="color: gold;">
+                Council</span></h1>
+    </div>
+    <div class="col-4"></div>
+</div>
+<div class="row">
+    <h5>The </h5>
+</div>
+
+
+
 {% endblock %}

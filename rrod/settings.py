@@ -25,7 +25,7 @@ SECRET_KEY = '$dyn@4f5wn!9b7wb-6=46pvigjwa-!dakk0skbnz2pmd63@#o@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['http://avaakash.pythonanywhere.com','127.0.0.1']
 
 
 # Application definition
@@ -127,5 +127,3 @@ STATICFILES_DIRS = [
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
-
-WSGI_APPLICATION = 'rrod.wsgi.application'

@@ -129,3 +129,29 @@ padding-right: 1rem; }
 label {
     color: gold;
 }
+.round-div {
+    font-family: pom ;
+    color: white;
+    padding-left:2rem ;
+    padding-right: 2rem;
+}
+.round-header {
+    font-family: rap;
+    font-size: 2.4rem;
+    color: gold;
+}
+
+.round-rhyme {
+    color: gold;
+}
+
+.round-div p {
+    font-size: 0.9rem;
+}
+
+.footer-text {
+    color: white;
+    font-size: 2rem;
+    font-family: pom;
+    padding-top: 2rem;
+}
