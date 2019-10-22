@@ -1,0 +1,54 @@
+{% extends 'include/base.html' %}
+{% load static %}
+{% block title %}R-Rod{% endblock %}
+
+{% block body %}
+
+<audio autoplay>
+    <source src="{% static 'css/webmusic.mp3' %}" type="audio/mpeg">
+</audio>
+
+<div class="text-center" style="padding-top: 4rem; padding-bottom: 4rem;">
+    <img class="top-logo2" src="{% static 'img/rrodlogo.png' %}" alt="rrod-logo" style=" border: 1px solid gold; border-radius: 1rem;"/>
+</div>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-3 text-center" style=" padding-bottom: 2rem">
+        <div class="text-center header" style="color: gold;">
+            Create
+        </div>
+        <div class="text-center header" >
+            Greatness
+        </div>
+        <div class="text-center"><a href="{% url 'rapper' %}"><button type="submit" class="btn btn-dark" style=" border: 2px solid gold; font-size: 2rem; color: honeydew; margin-top: 3rem;">Rapper</button></a></div>
+    </div>
+
+<div class="col-2 text-center">
+        <img class="micpic" src="{% static 'img/mic.png' %}" alt="mic" />
+</div>
+
+    <div class="col-3" style=" padding-bottom: 2rem">
+        <div class="text-center header" style="color: gold;">
+            Witness 
+        </div>
+        <div class="text-center header" >
+            Greatness
+        </div>
+        <div class="text-center">
+        <a href="{% url 'audience' %}"><button type="submit" class="btn btn-dark" style=" border: 2px solid gold; font-size: 2rem; color: honeydew; margin-top: 3rem;">Guest</button></a></div>
+    </div>
+    <div class="col-2"></div>
+</div>
+<div class="row" style="margin-bottom: 3rem">
+<div class="col-2"></div>
+<div class="col-3 blline" style="border-top: 1px solid gold;"></div>
+<div class="col-2"></div>
+<div class="col-3 brline" style="border-top: 1px solid gold;"></div>
+<div class="col-2"></div>
+</div>  
+
+<section style="background-color: black">
+    <div class="text-center" style="color: gold; font-size: 1.5rem; font-family: pom;">LET THE HUNT FOR THE NEXT <span style="color: white;">RAP RULER</span> BEGIN !!!</div>
+</section>
+
+{% endblock %}

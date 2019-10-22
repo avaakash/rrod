@@ -1,0 +1,38 @@
+from django.shortcuts import render, redirect
+from .forms import RapperForm, AudienceForm
+# Create your views here.
+
+
+def home(request):
+    return render(request, 'home.html')
+
+
+def success(request):
+    return(request, 'success.html')
+
+def rapper_registration(request):
+    form = RapperForm()
+    if request.method == 'POST':
+        form = RapperForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            pk = user.pk
+            return redirect(success)
+    context = {
+        'form':form,
+    }
+    return render(request, 'registration_form_rapper.html', context)
+
+
+def audience_registration(request):
+    form = AudienceForm()
+    if request.method == 'POST':
+        form = AudienceForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            pk = user.pk
+            return redirect(success)
+    context = {
+        'form':form,
+    }
+    return render(request, 'registration_form_audience.html', context)

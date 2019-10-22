@@ -1,0 +1,12 @@
+{% load widget_tweaks %}
+
+{% for field in form.visible_fields %}
+    {{ field.label_tag }} 
+    {% if field.errors %}
+        {% for error in field.errors %}
+           {{ error }}
+        {% endfor %}
+    {% endif %}
+    
+    {% render_field field class="form-control" %}
+{% endfor %}

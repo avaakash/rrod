@@ -1,0 +1,63 @@
+{% extends 'include/base.html' %}
+{% load widget_tweaks %}
+{% load static %}
+{% block title %}Register as Rapper{% endblock %}
+
+{% block body %}
+
+
+
+<div class="row">
+        <div class="col-4"></div>
+        <div class="col-4"><h1 class="text-center formhead" style="border-bottom: 1px solid gold;">Register as <span style="color: gold;">Rapper</span></h1></div>
+        <div class="col-4"></div>
+    </div>
+
+<section class="formformat" style="font-family: 'Special Elite', cursive; font-size: 1.1rem">
+    <form method="POST">
+        {% csrf_token %}
+        <div class="form-row align-items-center">
+            <div class="col-auto">
+                <label style="color: gold;">Name</label>
+                {% render_field form.name class="form-control mb-2" id='inputName' %}
+            </div>
+        </div>
+        <div class="form-row align-items-center">
+            <div class="col-auto">
+                <label style="color: gold;">Email</label>
+                {% render_field form.email class="form-control mb-2" %}
+            </div>
+            <div class="col-auto">
+                <label  style="color: gold;">Mobile Number</label>
+                {% render_field form.mobile_number class="form-control mb-2" %}
+            </div>
+        </div>
+        <div class="form-row align-items-center">
+            <div class="col-auto">
+                <label  style="color: gold;">Stage Name</label>
+                {% render_field form.stage_name class="form-control mb-2" %}
+            </div>
+            <div class="col-auto">
+                <label  style="color: gold;">Instagram Handle</label>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">@</div>
+                    </div>
+                    {% render_field form.instagram class="form-control mb-2" %}
+                </div>
+            </div>
+        </div>
+        <div class="text-center"><button type="submit" class="btn btn-dark" style=" border: 2px solid gold; font-size: 2rem; color: honeydew; margin-top: 3rem; font-family: rap; padding-left: 3rem; padding-right: 3rem;">Register</button></a></div>
+    </form>
+</section>
+
+<section class="text-center" style="background-color: black;">
+        <div class="row">
+            <div class="col-4"><button type="button" class="btn btn-ins" style="color: blanchedalmond; background-color: rgb(255, 166, 0); font-family: pom; margin-top: 1rem;"><i class="fab fa-instagram pr-1"></i> Instagram: TheWriteOrder</button></div>
+            <div class="col-4 text-center"><img class="footlogo text-center" src="{% static 'img/thewriteorderlogo.png' %}" alt="twr-logo" /></div>
+            <div class="col-4"><button type="button" class="btn btn-ins" style="color: blanchedalmond; background-color: rgb(255, 166, 0); font-family: pom; margin-top: 1rem;"><i class="fab fa-instagram pr-1"></i> Instagram: YAYAYTIPAREKH</button></div>
+        </div>
+    </section>
+
+
+{% endblock %}

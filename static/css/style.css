@@ -1,0 +1,131 @@
+@font-face {
+    font-family: rap;
+    src: url("fonts/Royal Vanity.ttf");
+}
+
+@font-face {
+    font-family: pom;
+    src: url("fonts/Pompei.otf");
+}
+
+body {
+    font-family: rap;
+    background-color: rgb(24, 24, 26);
+}
+img.bg {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1024px){
+    img.bg {
+    left: 50%;
+    margin-left: -512px; }
+}
+
+.header {
+    color: aliceblue; font-size: 5rem;
+    font-family: rap;
+    line-height: 4rem;
+}
+
+@media screen and (max-width: 600px){
+    .header {
+    font-size: 2rem; }
+}
+
+
+
+.top-logo1 {
+     width: 13%;
+     
+}
+
+@media screen and (max-width: 600px){
+    .top-logo1 {
+        width: 30%; }
+}
+
+.top-logo2 {
+    width: 30%;
+    background-color: white;
+}
+
+@media screen and (max-width: 600px){
+    .top-logo2 {
+        width: 80%; }
+}
+
+.littlehead {
+    color: aliceblue; font-size: 1rem;
+}
+
+.content {
+    padding-top: 5rem;
+}
+
+.formformat {
+    max-width: 80%;  left: 25%; padding-top: 3rem; color: gold; padding-bottom: 5rem; padding-left: 25%;
+    font-family: 'Special Elite', cursive; font-size: 1.1rem
+}
+
+@media screen and (max-width: 600px){
+    .formformat {
+        max-width: 80%; }
+}
+
+.formhead {
+    color: aliceblue; padding-top: 3rem; font-size: 3.3rem;
+}
+
+@media screen and (max-width: 600px){
+    .formhead {
+        font-size: 3rem;
+    padding-left: 1rem;
+padding-right: 1rem; }
+}
+
+.micpic {
+    height: 20rem;
+}
+
+@media screen and (max-width: 600px){
+    .micpic {
+        height: 12rem;
+        }
+}
+
+.blline {
+    padding-right: 10rem; 
+}
+
+@media screen and (max-width: 600px){
+    .blline {
+        padding-right: 0rem; 
+        }
+}
+
+.brline {
+    padding-right: 10rem; 
+}
+
+@media screen and (max-width: 600px){
+    .brline {
+        padding-right: 0rem; 
+        }
+}
+
+.footlogo {
+    height: 5rem;
+    border: 1px solid gold; border-radius: 1rem;
+}
+
+label {
+    color: gold;
+}
