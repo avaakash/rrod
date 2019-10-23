@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '$dyn@4f5wn!9b7wb-6=46pvigjwa-!dakk0skbnz2pmd63@#o@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['http://avaakash.pythonanywhere.com','127.0.0.1']
 
@@ -77,8 +77,11 @@ WSGI_APPLICATION = 'rrod.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'avaakash$rrod-data',
+        'USER': 'avaakash',
+        'PASSWORD': 'RRODthewriteorder2210',
+        'HOST': 'avaakash.mysql.pythonanywhere-services.com',
     }
 }
 

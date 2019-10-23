@@ -5,7 +5,7 @@ from .models import Rapper,Audience
 class RapperForm(forms.ModelForm):
     class Meta:
         model = Rapper
-        fields = ['name','stage_name','email','mobile_number','instagram',] 
+        fields = ['name','stage_name','email','mobile_number','instagram','video_link'] 
 
 class AudienceForm(forms.ModelForm):
     class Meta:

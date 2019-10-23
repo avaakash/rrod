@@ -81,7 +81,7 @@ img.bg {
 }
 
 .formhead {
-    color: aliceblue; padding-top: 3rem; font-size: 3.3rem;
+    color: aliceblue; padding-top: 3rem;
 }
 
 @media screen and (max-width: 600px){
@@ -97,7 +97,7 @@ padding-right: 1rem; }
 
 @media screen and (max-width: 600px){
     .micpic {
-        height: 12rem;
+        height: 10rem;
         }
 }
 
@@ -189,6 +189,6 @@ label {
 
 @media screen and (max-width: 600px){
     .insta {
-        font-size: .8rem;
+        font-size: .7rem;
         }
 }

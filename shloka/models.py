@@ -9,6 +9,7 @@ class Rapper(models.Model):
     email = models.EmailField()
     mobile_number = models.CharField(max_length=10,validators=[RegexValidator(r'^[6-9]{1}[0-9]{9}$')])
     instagram = models.CharField(max_length=50)
+    video_link = models.CharField(max_length=1000,default='')
 
     def __str__(self):
         return self.name

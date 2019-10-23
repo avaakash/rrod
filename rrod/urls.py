@@ -28,3 +28,6 @@ urlpatterns = [
     path('404',error404),
     path('500',error500)
 ]
+
+handler404 = error404
+handler500 = error500
