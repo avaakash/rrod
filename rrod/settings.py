@@ -25,7 +25,7 @@ SECRET_KEY = '$dyn@4f5wn!9b7wb-6=46pvigjwa-!dakk0skbnz2pmd63@#o@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['http://avaakash.pythonanywhere.com','127.0.0.1']
+ALLOWED_HOSTS = ['avaakash.pythonanywhere.com']
 
 
 # Application definition
@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'rrod.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'avaakash$rrod-data',
+        'NAME': 'avaakash$rrod',
         'USER': 'avaakash',
         'PASSWORD': 'RRODthewriteorder2210',
         'HOST': 'avaakash.mysql.pythonanywhere-services.com',
@@ -123,10 +123,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STAITC_ROOT = 'static'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-]
+STATIC_ROOT = "/home/avaakash/rrod/static"
+
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
