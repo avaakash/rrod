@@ -5,12 +5,12 @@ def home(request):
     return render(request,'home.html')
 
 def success(request):
-    return render(request,'success.html')
-
-def round_details(request):
     #if not request.session.get('form-submitted', False):
         #return redirect('home')
     #else:
+    return render(request,'success.html')
+
+def round_details(request):
     return render(request,'round-details.html')
 
 def rapper_registration(request):

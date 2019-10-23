@@ -137,7 +137,7 @@ label {
 }
 .round-header {
     font-family: rap;
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     color: gold;
 }
 
@@ -154,4 +154,12 @@ label {
     font-size: 2rem;
     font-family: pom;
     padding-top: 2rem;
+}
+
+.left-div {
+    padding-left: 6rem;
+}
+
+.right-div {
+    padding-right: 6rem;
 }

@@ -10,25 +10,32 @@
 <div class="row">
     <div class="col-4"></div>
     <div class="col-4">
-        <h1 class="text-center formhead" style="border-bottom: 1px solid gold;">Registration<span style="color: gold;">
-                Complete</span></h1>
+        <h1 class="text-center formhead" style="border-bottom: 1px solid gold;">Round<span style="color: gold;">
+                Details</span></h1>
     </div>
 </div>
 <div class="row">
-    <span class="">Your registration is complete </span>
+    <span class="">Read this before registering</span>
 </div>
 <div class="row">
     <div class="col-12 round-div">
-        <div style="float: left;" class="col-md-4">
+        <div style="display: inline-block;" class="col-md-4 left-div">
             <span class="round-header">Round 1</span>
 
-            <p>Well oh well, round one will <span class="round-rhyme">tell</span>,<br />
-                If you've got the skills to unleash <span class="round-rhyme">hell</span>.<br />
-                So all you got to do is go back in time to spit the rhyme, be precise in every<br />
-                line, cause you perform the first rap you learnt to kick start the night.<br />
+            <p><span class="round-rhyme">Well</span> oh <span class="round-rhyme">well</span>, round one <span
+                    class="round-rhyme">will tell</span>,<br />
+                If you've got the <span class="round-rhyme">skills</span> to unleash <span
+                    class="round-rhyme">hell</span>.
+                So all you got to do is go back in <span class="round-rhyme">time</span> to spit the <span
+                    class="round-rhyme">rhyme</span>,
+                be precise in every <span class="round-rhyme">line</span>,
+                Be the <span class="round-rhyme">royalty</span> to <span class="round-rhyme">lyrically</span> perform
+                the first rap you learnt back then, so you <span class="round-rhyme">might miracoulsy</span> kick start
+                the <span class="round-rhyme">night</span>.
+
             </p>
         </div>
-        <div style="float: left;" class="col-md-4">
+        <div style="display: inline-block;" class="col-md-4 right-div">
             <span class="round-header">Round 2</span>
 
             <p>First there were twelve, now there will be <span class="round-rhyme">six</span>.<br />
@@ -38,22 +45,27 @@
                 Diss them. Right down to the last left fuck.<br />
             </p>
         </div>
-        <div style="float: right;" class="col-md-4">
-            <span class="round-header">Round 3</span>
-
-            <p>The war is coming to an end.<br />
-                Left are legends 3, let's see how your style is when set free.<br />
-                So now is the time you take down the <span class="round-rhyme">crowd</span>.<br />
-                Come with lyrics, original, bold, beautiful and <span class="round-rhyme">loud</span>.<br />
-                This will be the last time you stand at the field.<br />
-                Give it all you got boy!<br />
-                Do not retreat.<br />
-            </p>
-        </div>
     </div>
 </div>
 <div class="row justify-content-center">
-    <span class="footer-text">Rap Ruler Council will review<span>
+    <div class="round-div">
+        <span class="round-header">Round 3</span>
+
+        <p>The war is coming to an end.<br />
+            Left are legends <span class="round-rhyme">3</span>, <br />
+            let's see how your style is when set <span class="round-rhyme">free</span>.<br />
+            So now is the time you take down the <span class="round-rhyme">crowd</span>.<br />
+            Come with lyrics, original, bold, beautiful and <span class="round-rhyme">loud</span>.<br />
+            This will be the last time you stand at the field.<br />
+            Give it all you got boy!<br />
+            Do not retreat.<br />
+        </p>
+    </div>
+</div>
+</div>
+<div class="row justify-content-center">
+    <span class="footer-text"><a href="{% url 'rapper' %}"><button type="submit" class="btn btn-dark"
+                style=" border: 2px solid gold; font-size: 2rem; color: honeydew; margin-top: 3rem; font-family: rap; padding-left: 3rem; padding-right: 3rem;">Proceed</button></a><span>
 </div>
 
 {% endblock %}
