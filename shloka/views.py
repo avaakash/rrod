@@ -43,3 +43,6 @@ def audience_registration(request):
 
 def error404(request):
     return render(request,'error404.html')
+
+def error500(request):
+    return render(request,'error500.html')
