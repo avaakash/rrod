@@ -1,0 +1,43 @@
+{% extends 'include/base.html' %}
+{% load widget_tweaks %}
+{% load static %}
+{% block title %}Oops! 404{% endblock %}
+
+{% block body %}
+<div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+        <h1 class="text-center formhead" style="border-bottom: 1px solid gold;">Error<span style="color: gold;">
+                400</span></h1>
+    </div>
+</div>
+<section class="middle-section">
+    <div class="row justify-content-center">
+        <span class="footer-text"><span style="color: gold;">Council</span>Oops!</span> Looks like you lost your way
+    </div>
+    <div class="row justify-content-center">
+        <div class="text-center"><a href="{% url 'home' %}"><button type="button" class="btn btn-dark"
+                style=" border: 2px solid gold; font-size: 2rem; color: honeydew; margin-top: 3rem; font-family: rap; padding-left: 3rem; padding-right: 3rem;">Let's go back</button></a>
+        </div>
+    </div>
+</section>
+
+<section class="text-center" style="background-color: black;margin-top: 3.5rem;">
+    <div class="row">
+        <div class="col-4"><a href="https://instagram.com/thewriteorder" target="blank"><button type="button"
+                    class="btn btn-ins"
+                    style="color: blanchedalmond; background-color: rgb(255, 166, 0); font-family: pom; margin-top: 1rem;"><i
+                        class="fab fa-instagram pr-1"></i> Instagram: TheWriteOrder</button></a></div>
+        <div class="col-4 text-center"><img class="footlogo text-center" src="{% static 'img/thewriteorderlogo.png' %}"
+                alt="twr-logo" /></div>
+        <div class="col-4"><a href="https://instagram.com/yayatiparekh" target="blank"><button type="button"
+                    class="btn btn-ins"
+                    style="color: blanchedalmond; background-color: rgb(255, 166, 0); font-family: pom; margin-top: 1rem;"><i
+                        class="fab fa-instagram pr-1"></i> Instagram: YAYATIPAREKH</button></a></div>
+    </div>
+</section>
+
+
+
+
+{% endblock %}

@@ -40,3 +40,6 @@ def audience_registration(request):
         'form':form,
     }
     return render(request, 'registration_form_audience.html', context)
+
+def error404(request):
+    return render(request,'error404.html')

@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from shloka.views import home, rapper_registration,audience_registration,success,round_details
+from django.conf.urls import handler404, handler500
+from shloka.views import home, rapper_registration,audience_registration,success,round_details,error404
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,3 +26,5 @@ urlpatterns = [
     path('success',success,name='success'),
     path('round-details',round_details,name='rounds'),
 ]
+
+handler404 = error404
