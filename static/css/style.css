@@ -163,3 +163,16 @@ label {
 .right-div {
     padding-right: 6rem;
 }
+
+.middle-section {
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+}
+
+.section01 {
+    max-width: 100%;
+}
+
+.img-fluid {
+    height: auto;
+}
