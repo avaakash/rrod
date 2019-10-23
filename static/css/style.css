@@ -71,7 +71,7 @@ img.bg {
 }
 
 .formformat {
-    max-width: 80%;  left: 25%; padding-top: 3rem; color: gold; padding-bottom: 5rem; padding-left: 25%;
+    max-width: 80%;  left: 25%; padding-top: 3rem; color: gold; padding-left: 25%;
     font-family: 'Special Elite', cursive; font-size: 1.1rem
 }
 
@@ -126,6 +126,12 @@ padding-right: 1rem; }
     border: 1px solid gold; border-radius: 1rem;
 }
 
+@media screen and (max-width: 600px){
+    .footlogo {
+        height: 3rem; 
+        }
+}
+
 label {
     color: gold;
 }
@@ -175,4 +181,14 @@ label {
 
 .img-fluid {
     height: auto;
+}
+
+.insta {
+    color: blanchedalmond; background-color: rgb(255, 166, 0); font-family: pom; margin-top: 1rem;
+}
+
+@media screen and (max-width: 600px){
+    .insta {
+        font-size: .8rem;
+        }
 }
